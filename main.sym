@@ -1,0 +1,229 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016-018 dat
+019     t_rx_stat
+01A-01D rx_id
+01E-025 in_data
+026     rx_len
+027.0   k
+028-02B can_putd.id
+028     can_set_mode.mode
+028     can_init.@SCRATCH1
+028     MAIN.@SCRATCH1
+029     @delay_ms1.P1
+029     can_set_mode.@SCRATCH1
+02C-02D can_putd.data
+02E     can_putd.len
+02F     can_putd.priority
+030     can_putd.ext
+031     can_putd.rtr
+032     can_putd.i
+033-034 can_putd.txd0
+035     can_putd.port
+036-037 can_set_id.addr
+036     can_putd.@SCRATCH1
+037     can_putd.@SCRATCH2
+038-03B can_set_id.id
+038     can_putd.@SCRATCH3
+03C     can_set_id.ext
+03D-03E can_set_id.ptr
+03F     can_set_id.@SCRATCH1
+040     can_set_id.@SCRATCH2
+041     can_set_id.@SCRATCH3
+042     can_set_id.@SCRATCH4
+043-044 can_getd.data
+045     can_getd.i
+046-047 can_getd.ptr
+048     can_getd.@SCRATCH1
+049     can_getd.@SCRATCH2
+04A     can_getd.@SCRATCH3
+04F-050 can_get_id.addr
+051     can_get_id.ext
+052-055 can_get_id.ret
+056-057 can_get_id.ptr
+058     can_get_id.@SCRATCH1
+059     can_get_id.@SCRATCH2
+05A     can_get_id.@SCRATCH3
+05B     can_get_id.@SCRATCH4
+05C     can_get_id.@SCRATCH5
+F00     RXF0SIDH
+F01     RXF0SIDL
+F02     RXF0EIDH
+F03     RXF0EIDL
+F04     RXF1SIDH
+F05     RXF1SIDL
+F06     RXF1EIDH
+F07     RXF1EIDL
+F08     RXF2SIDH
+F09     RXF2SIDL
+F0A     RXF2EIDH
+F0B     RXF2EIDL
+F0C     RXF3SIDH
+F0D     RXF3SIDL
+F0E     RXF3EIDH
+F0F     RXF3EIDL
+F10     RXF4SIDH
+F11     RXF4SIDL
+F12     RXF4EIDH
+F13     RXF4EIDL
+F14     RXF5SIDH
+F15     RXF5SIDL
+F16     RXF5EIDH
+F17     RXF5EIDL
+F18     RXM0SIDH
+F19     RXM0SIDL
+F1A     RXM0EIDH
+F1B     RXM0EIDL
+F1C     RXM1SIDH
+F1D     RXM1SIDL
+F1E     RXM1EIDH
+F1F     RXM1EIDL
+F20     TXB2CON
+F21     TXB2SIDH
+F22     TXB2SIDL
+F23     TXB2EIDH
+F24     TXB2EIDL
+F25     TXB2DLC
+F26     TXB2D0
+F2D     TXB2D7
+F30     TXB1CON
+F31     TXB1SIDH
+F32     TXB1SIDL
+F33     TXB1EIDH
+F34     TXB1EIDL
+F35     TXB1DLC
+F36     TXB1D0
+F3D     TXB1D7
+F40     TXB0CON
+F41     TXB0SIDH
+F42     TXB0SIDL
+F43     TXB0EIDH
+F44     TXB0EIDL
+F45     TXB0DLC
+F46     TXB0D0
+F4D     TXB0D7
+F50     RXB1CON
+F51     RXB1SIDH
+F52     RXB1SIDL
+F53     RXB1EIDH
+F54     RXB1EIDL
+F55     RXB1DLC
+F60     TXBaCON
+F60     RXB0CON
+F61     RXB0SIDH
+F62     TXRXBaSIDL
+F62     RXB0SIDL
+F63     RXB0EIDH
+F64     TXRXBaEIDL
+F64     RXB0EIDL
+F65     RXB0DLC
+F65     TXBaDLC
+F65     RXBaDLC
+F66     TXRXBaD0
+F66     RXB0D0
+F6D     RXB0D7
+F6D     TXRXBaD7
+F6E     CANSTAT
+F6F     CANCON
+F70     BRGCON1
+F71     BRGCON2
+F72     BRGCON3
+F73     CIOCON
+F74     COMSTAT
+F75     RXERRCNT
+F76     TXERRCNT
+F83     PSP_DATA
+FA4.0   CAN_INT_RXB0IF
+FA4.1   CAN_INT_RXB1IF
+FA4.2   CAN_INT_TXB0IF
+FA4.3   CAN_INT_TXB1IF
+FA4.4   CAN_INT_TXB2IF
+FA4.5   CAN_INT_ERRIF
+FA4.6   CAN_INT_WAKIF
+FA4.7   CAN_INT_IRXIF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000A2  isr
+0000B2  can_get_id
+000294  canrx0_int
+0002A6  can_getd
+0003C2  can_set_mode
+0003E4  can_set_baud
+000414  can_set_id
+000544  can_init
+000620  can_putd
+0006E0  @delay_ms1
+000708  @cinit1
+000708  MAIN
+00071C  @cinit2
+
+Project Directory:
+    D:\BACKUP\GitHub Calismalar\PIC-CANBus-Communication\
+
+Project Files:
+    main.c                                                  [02-Haz-24 16:55  CRC=5822C9C1]
+    C:\Program Files (x86)\PICC\Devices\18F458.h            [21-Haz-13 16:05  CRC=1AB1DF0F]
+    C:\Program Files (x86)\PICC\Drivers\can-18xxx8.c        [10-Oca-13 11:22  CRC=12402CA3]
+    C:\Program Files (x86)\PICC\Drivers\can-18xxx8.h        [10-Oca-13 11:19  CRC=624EB0FF]
+
+Source signature=49B23771
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

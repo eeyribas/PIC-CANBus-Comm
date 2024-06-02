@@ -1,0 +1,5 @@
+>>> Warning 225 "main.c" Line 13(28,34): Duplicate #define
+>>> Warning 202 "main.c" Line 20(6,7): Variable never used:   k
+      Memory usage:   ROM=6%      RAM=3% - 6%
+      0 Errors,  2 Warnings.
+Build Successful.
