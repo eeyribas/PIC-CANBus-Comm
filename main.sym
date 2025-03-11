@@ -195,10 +195,10 @@ ROM Allocation:
 00071C  @cinit2
 
 Project Directory:
-    D:\BACKUP\GitHub Calismalar\PIC-CANBus-Communication\
+    D:\BACKUP\GitHub\PIC-CANBus-Comm\
 
 Project Files:
-    main.c                                                  [02-Haz-24 16:55  CRC=5822C9C1]
+    main.c                                                  [12-Mar-25 00:16  CRC=5822C9C1]
     C:\Program Files (x86)\PICC\Devices\18F458.h            [21-Haz-13 16:05  CRC=1AB1DF0F]
     C:\Program Files (x86)\PICC\Drivers\can-18xxx8.c        [10-Oca-13 11:22  CRC=12402CA3]
     C:\Program Files (x86)\PICC\Drivers\can-18xxx8.h        [10-Oca-13 11:19  CRC=624EB0FF]

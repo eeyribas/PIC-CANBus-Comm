@@ -1,8 +1,7 @@
-D G "CAN_USE_EXTENDED_ID" 0 13 "FALSE"
-D G "__PCH__" 0 93 ""5.007""
-D G "__DEVICE__" 0 93 "458"
-D G "__DATE__" 0 93 ""02-Haz-24""
-D G "__TIME__" 0 93 ""16:55:53"" "Standard Header file for the PIC18F458 device ////////////////"
+D G "__PCH__" 0 0 ""5.007""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""12-Mar-25""
+D G "__TIME__" 0 0 ""00:20:01"" "Standard Header file for the PIC18F458 device ////////////////"
 c L "set_tris_a" 1 5 16 "FUNCTION"
 v L "value" 1 31 "int8" `54 
 f B "set_tris_a" 1 31 "void(int8 value)" `53 
